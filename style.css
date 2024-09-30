@@ -1,0 +1,265 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; /* Pastikan font Inter telah di-import */
+}
+
+/* Background Galaksi */
+body {
+  background: radial-gradient(circle, rgba(20, 20, 40, 1) 0%, rgba(0, 0, 0, 1) 50%),
+              url('https://example.com/your-galaxy-image.jpg') no-repeat center center fixed; /* Ganti dengan URL gambar galaksi jika ada */
+  background-size: cover; /* Mengatur ukuran gambar latar belakang */
+}
+
+/* Container untuk Header */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px; /* Ruang dalam */
+  color: #ffffff; /* Warna teks */
+  position: relative; /* Posisi relatif untuk efek */
+}
+
+/* Style untuk Logo */
+.logo {
+  width: 100px; /* Ukuran logo */
+  height: auto;
+  margin-bottom: 20px; /* Jarak bawah */
+}
+
+/* Header Inner */
+.hdr-container-inner {
+  text-align: center;
+}
+
+/* Style untuk Judul */
+h1 {
+  font-size: 2.5rem; /* Ukuran font untuk judul */
+  margin-bottom: 20px; /* Jarak bawah */
+}
+
+/* Style untuk Paragraf */
+p {
+  font-size: 1rem; /* Ukuran font untuk paragraf */
+  line-height: 1.5; /* Jarak antar baris */
+  margin-bottom: 20px; /* Jarak bawah */
+}
+
+/* Tombol Hire Now */
+.btn {
+  display: inline-block; /* Menjadikan tombol inline-block */
+  padding: 10px 20px; /* Ruang dalam tombol */
+  background-color: rgba(97, 218, 251, 0.9); /* Warna latar belakang tombol */
+  color: #282c34; /* Warna teks tombol */
+  text-decoration: none; /* Menghapus garis bawah */
+  border-radius: 5px; /* Sudut melengkung */
+  font-weight: bold; /* Teks tebal */
+  transition: background-color 0.3s ease; /* Transisi halus saat hover */
+}
+
+/* Efek Hover pada Tombol */
+.btn:hover {
+  background-color: rgba(33, 161, 241, 0.9); /* Warna tombol saat hover */
+}
+
+/* Social Links */
+.parent-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Jarak bawah */
+}
+
+/* Social Link Style */
+.social-links {
+  margin: 0 15px; /* Jarak antar link sosial */
+  color: #ffffff; /* Warna teks */
+  text-decoration: none; /* Menghapus garis bawah */
+  font-weight: 500; /* Teks sedang */
+  transition: opacity 0.3s ease; /* Transisi halus saat hover */
+}
+
+/* Efek Hover pada Social Links */
+.social-links:hover {
+  opacity: 0.8; /* Mengurangi opasitas saat hover */
+}
+
+/* Social Icons */
+.icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Jarak atas */
+}
+
+.sm-icon {
+  margin: 0 10px; /* Jarak antar ikon */
+  color: white; /* Warna ikon */
+  font-size: 1.5rem; /* Ukuran ikon */
+}
+
+/* Efek Hover pada Social Icons */
+.sm-icon:hover {
+  opacity: 0.8; /* Mengurangi opasitas saat hover */
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Ukuran font untuk perangkat kecil */
+  }
+
+  p {
+    font-size: 0.9rem; /* Ukuran font untuk perangkat kecil */
+  }
+
+  .btn {
+    padding: 8px 16px; /* Ukuran tombol untuk perangkat kecil */
+  }
+}
+/* Bagian About */
+.about-container {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: rgba(40, 44, 52, 0.8); /* Warna latar belakang transparan */
+  margin: 20px 0; /* Jarak atas dan bawah */
+  border-radius: 10px; /* Sudut melengkung */
+}
+
+/* Bagian Projects */
+.projects-container {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.project-card {
+  background-color: rgba(97, 218, 251, 0.1); /* Warna latar belakang untuk proyek */
+  padding: 20px;
+  margin: 10px 0; /* Jarak antar kartu proyek */
+  border-radius: 10px; /* Sudut melengkung */
+}
+
+/* Bagian Experience */
+.experience-container {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: rgba(40, 44, 52, 0.8); /* Warna latar belakang transparan */
+  margin: 20px 0; /* Jarak atas dan bawah */
+  border-radius: 10px; /* Sudut melengkung */
+}
+
+/* Bagian Contact */
+.contact-container {
+  padding: 50px 20px;
+  text-align: center;
+}
+/* Animasi untuk bagian yang diklik */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.animate {
+  animation: fadeIn 1s ease, zoomIn 0.5s ease; /* Menggunakan animasi fadeIn dan zoomIn */
+}
+
+/* Mengubah warna latar belakang untuk setiap bagian */
+.about-container {
+  background-color: rgba(40, 44, 52, 0.8);
+}
+
+.projects-container {
+  background-color: rgba(40, 44, 52, 0.8); /* Warna latar belakang untuk Projects */
+}
+
+.experience-container {
+  background-color: rgba(40, 44, 52, 0.8); /* Warna latar belakang untuk Experience */
+}
+
+.contact-container {
+  background-color: rgba(40, 44, 52, 0.8); /* Warna latar belakang untuk Contact */
+}
+
+/* Bagian tambahan tetap sama */
+.project-card {
+  background-color: rgba(97, 218, 251, 0.1); /* Warna latar belakang untuk proyek */
+  padding: 20px;
+  margin: 10px 0; /* Jarak antar kartu proyek */
+  border-radius: 10px; /* Sudut melengkung */
+}
+
+/* Kontainer dan teks lainnya tetap sama */
+.header-container, .hdr-container-inner, h1, p, h2, h3, ul {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.parallax {
+  height: 500px; /* Tinggi parallax */
+  background-attachment: fixed; /* Mengunci latar belakang agar tidak bergerak */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Mengisi area parallax */
+}
+
+.header-container, .hdr-container-inner, h1, p, h2, h3, ul {
+  text-align: center;
+}
+
+/* Konten lainnya tetap sama, silakan tambahkan gaya tambahan sesuai kebutuhan */
+/* Animation Styles */
+@keyframes clickEffect {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.animate-click {
+  animation: clickEffect 0.3sease;
+}
+
+@keyframes scrollEffect {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.animate-scroll {
+  animation: scrollEffect 0.5seaseforwards;
+}
+
